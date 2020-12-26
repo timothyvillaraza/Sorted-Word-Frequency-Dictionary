@@ -2,7 +2,7 @@
 # Author:
 # Date: 12/22/2020
 # Purpose: To create a case-insensitive word freqeuncy map
-# Testing branch feature
+# Testing branch feature, I would like to merge into main
 
 from collections import defaultdict
 
