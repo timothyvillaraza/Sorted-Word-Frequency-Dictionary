@@ -43,12 +43,13 @@ def wordFreqKeys(userInput):
 #
 # Print Word Frequency
 #
-def printWordFreq(wordFreq, sortedKeys):
-    print("\n   [Word Count]")
-    for currentKey in sortedKeys:
-        print("   {}: {}".format(currentKey, wordFreq[currentKey]))
+def printWordFreq(user):
+  print("\n   [Word Count]")
+  for currentKey in user.sortedKeys:
+      print("   {}: {}".format(currentKey, user.wordFreq[currentKey]))
 
-    return
+  return
+
 
 
 def main():
@@ -91,7 +92,7 @@ def main():
         if query != None:
             print("   [User Information]")
             print("   ID: {} Name: {}".format(query.ID, query.name))
-            printWordFreq(query.wordFreq, newUser.sortedKeys)
+            printWordFreq(query)
 
         else:
             print("   {} was not found.".format(userName))
